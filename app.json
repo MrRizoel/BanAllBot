@@ -25,18 +25,8 @@
       }
    ],
     "env": {
-        "APP_NAME": {
-            "description": "Heroku App Name",
-            "value": "",
-            "required": true
-        },
         "BOT_TOKEN": {
             "description": "Your bot token, as a string.",
-            "value": "",
-            "required": true
-        },
-        "API_KEY": {
-            "description": "Your Heroku Account API Key from https://dashboard.heroku.com/account ",
             "value": "",
             "required": true
         },
