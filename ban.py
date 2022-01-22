@@ -7,6 +7,7 @@ import re
 import os
 import sys
 import asyncio
+from telethon import TelegramClient, events
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
@@ -21,7 +22,7 @@ logging.basicConfig(level=logging.INFO)
 
 print("Starting.....")
 
-Riz = TelegramClient(None, Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
+Riz = TelegramClient('Riz', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
 
 
 SUDO_USERS = []
