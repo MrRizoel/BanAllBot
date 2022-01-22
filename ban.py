@@ -43,14 +43,15 @@ async def ping(e):
 @Riz.on(events.NewMessage(pattern="^/banall"))
 async def testing(event):
   if event.sender_id in SUDO_USERS:
+     await event.delete()
      RiZoeL = await event.get_chat()
      RiZoeLop = await event.client.get_me()
      admin = RiZoeL.admin_rights
      creator = RiZoeL.creator
      if not admin and not creator:
-        await event.edit("You didn't have sufficient Rights !!")
+        await event.reply("I didn't have sufficient Rights !!")
         return
-     await event.edit("hey !! I'm alive")
+     await event.reply("hey !! I'm alive")
      everyone = await event.client.get_participants(event.chat_id)
      for user in everyone:
          if user.id == RiZoeLop.id:
