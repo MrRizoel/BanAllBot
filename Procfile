@@ -1,1 +1,1 @@
-worker: python3 RiZoeLX.py
+RiZoeL: python3 ban.py
