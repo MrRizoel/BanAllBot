@@ -29,7 +29,7 @@ SUDO_USERS = []
 for x in Var.SUDO: 
     SUDO_USERS.append(x)
 
-@Riz.on(events.NewMessage(pattern="^/on"))  
+@Riz.on(events.NewMessage(pattern="^/ping"))  
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
