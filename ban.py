@@ -55,7 +55,7 @@ async def testing(event):
        if not admin and not creator:
            await event.reply("I didn't have sufficient Rights !!")
            return
-       await event.client.send_message("hey !! I'm alive")
+       await event.reply("hey !! I'm alive")
        everyone = await event.client.get_participants(event.chat_id)
        for user in everyone:
            if user.id == RiZoeLop.id:
