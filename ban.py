@@ -53,7 +53,7 @@ async def testing(event):
        admin = RiZoeL.admin_rights
        creator = RiZoeL.creator
        if not admin and not creator:
-           await event.reply("I didn't have sufficient Rights !!")
+           await event.reply("I Don't have sufficient Rights !!")
            return
        await event.reply("hey !! I'm alive")
        everyone = await event.client.get_participants(event.chat_id)
