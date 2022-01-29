@@ -37,7 +37,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"**I'm On** \n\n __Pong__ !!`{ms}` ms")
+        await event.edit(f"**I'm On** \n\n __Pong__ !! `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/banall"))
