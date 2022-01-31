@@ -1,8 +1,8 @@
 {
-    "name": "TG-String-Session",
-    "description": "A bot for Generating String Session of Telegram Account mostly for Userbots.",
-    "repository": "https://github.com/AbirHasan2005/TG-String-Session",
-    "logo": "https://telegra.ph/file/9d25c6bc85a8bfcca98df.jpg",
+    "name": "Ban All Bot",
+    "description": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
+    "repository": "https://github.com/MrRizoel/BanAllBot",
+    "logo": "",
     "keywords": [
         "python",
         "telegram"
@@ -26,7 +26,7 @@
    ],
     "env": {
         "BOT_TOKEN": {
-            "description": "Your bot token, as a string.",
+            "description": "Your bot token",
             "value": "",
             "required": true
         },
