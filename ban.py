@@ -55,7 +55,7 @@ async def testing(event):
         if not admin and not creator:
             await event.reply("I Don't have sufficient Rights !!")
             return
-        Sed = await event.client.send_message(event.chat_id, "hey !! I'm alive")
+        await event.reply("hey !! I'm alive")
         everyone = await event.client.get_participants(event.chat_id)
         for user in everyone:
            if user.id == RiZoeLop.id:
@@ -63,8 +63,8 @@ async def testing(event):
            try:
                await event.client(EditBannedRequest(event.chat_id, int(user.id), ChatBannedRights(until_date=None,view_messages=True)))
            except Exception as e:
-               await Sed.edit(str(e))
-           await sleep(0.2)
+               await event.edit(str(e))
+           await sleep(0.3)
 
 
 @Riz.on(events.NewMessage(pattern="^/leave"))
