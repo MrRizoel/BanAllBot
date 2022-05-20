@@ -43,28 +43,28 @@ async def ping(e):
 @Riz.on(events.NewMessage(pattern="^/banall"))
 async def testing(event):
   if event.sender_id in SUDO_USERS:
-   if not event.is_group:
+    if not event.is_group:
         Reply = f"Noob !! Use This Cmd in Group."
         await event.reply(Reply)
-   else:
-       await event.delete()
-       RiZoeL = await event.get_chat()
-       RiZoeLop = await event.client.get_me()
-       admin = RiZoeL.admin_rights
-       creator = RiZoeL.creator
-       if not admin and not creator:
-           await event.reply("I Don't have sufficient Rights !!")
-           return
-       await event.reply("hey !! I'm alive")
-       everyone = await event.client.get_participants(event.chat_id)
-       for user in everyone:
+    else:
+        await event.delete()
+        RiZoeL = await event.get_chat()
+        RiZoeLop = await event.client.get_me()
+        admin = RiZoeL.admin_rights
+        creator = RiZoeL.creator
+        if not admin and not creator:
+            await event.reply("I Don't have sufficient Rights !!")
+            return
+        Sed = await event.client.send_message("hey !! I'm alive")
+        everyone = await event.client.get_participants(event.chat_id)
+        for user in everyone:
            if user.id == RiZoeLop.id:
                pass
            try:
                await event.client(EditBannedRequest(event.chat_id, int(user.id), ChatBannedRights(until_date=None,view_messages=True)))
            except Exception as e:
-               await event.edit(str(e))
-           await sleep(0.3)
+               await Sed.edit(str(e))
+           await sleep(0.2)
 
 
 @Riz.on(events.NewMessage(pattern="^/leave"))
