@@ -90,10 +90,10 @@ async def kickall(event):
                 if user.id not in admins_id:
                     await event.client.kick_participant(event.chat_id, user.id)
                     kimk += 1
-                    await asyncio.sleep(0.2)
+                    await asyncio.sleep(0.1)
              except Exception as e:
                     print(str(e))
-                    await asyncio.sleep(0.2)
+                    await asyncio.sleep(0.1)
          await RiZoeL.edit(f"**Users Kicked Successfully ! \n\n Kicked:** `{kimk}` \n **Total:** `{all}`")
     
 
