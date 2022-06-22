@@ -17,6 +17,7 @@ from telethon.tl.functions.channels import EditBannedRequest
 from datetime import datetime
 from var import Var
 from time import sleep
+from telethon.errors.rpcerrorlist import FloodWaitError
 from telethon.tl import functions
 from telethon.tl.types import (
     ChannelParticipantsAdmins,
