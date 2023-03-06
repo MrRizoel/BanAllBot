@@ -1,49 +1,39 @@
 {
-    "name": "Ban All Bot",
-    "description": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
-    "repository": "https://github.com/MrRizoel/BanAllBot",
-    "logo": "",
-    "keywords": [
+   "name": "Ban All Bot",
+   "description": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
+   "repository": "https://github.com/MrRizoel/BanAllBot",
+   "logo": "",
+   "keywords": [
         "python",
         "telegram"
-    ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-     },
-       "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
+  "repository": "https://github.com/MrRizoel/BanallBot",
+  "website": "https://github.com/MrRizoel",
+  "success_url": "https://t.me/TheRiZoeL",
+  "env": {
+      "API_ID": {
+        "description": "Fill Api ID Take this value from My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Fill Api hash Take this value from My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "Bot Token",
+        "value": "",
+        "required": true
+      },      
+      "SUDO": {
+            "description": "Sudo users id space by space",
+            "value": "",
+            "required": true  
       }
-   ],
-    "env": {
-        "BOT_TOKEN": {
-            "description": "Your bot token",
-            "value": "",
-            "required": true
-        },
-        "API_ID": {
-            "description": "Get from https://my.telegram.org",
-            "value": "",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Get from https://my.telegram.org",
-            "value": "",
-            "required": true
-        },
-        "SUDO": {
-            "description": "sudo ids here.",
-            "value": "",
-            "required": true
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
         }
-    }
+    ]
 }
