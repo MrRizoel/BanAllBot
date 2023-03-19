@@ -4,9 +4,9 @@
    "repository": "https://github.com/MrRizoel/BanAllBot",
    "logo": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
    "keywords": [
-        "python",
-        "telegram",
-         ],
+      "python",
+      "telegram",
+   ],
    "repository": "https://github.com/MrRizoel/BanallBot",
    "website": "https://github.com/MrRizoel",
    "success_url": "https://t.me/TheRiZoeL",
@@ -34,7 +34,7 @@
     },
     "buildpacks": [
         {
-            "url": "heroku/python"
-        }
+            "url": "heroku/python",
+        },
     ]
 }
