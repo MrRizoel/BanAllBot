@@ -1,8 +1,8 @@
 {
    "name": "Ban All Bot",
-   "description": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
+   "description": "Telegram Bot",
    "repository": "https://github.com/MrRizoel/BanAllBot",
-   "logo": "",
+   "logo": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
    "keywords": [
         "python",
         "telegram"
@@ -29,8 +29,8 @@
             "description": "Sudo users id space by space",
             "value": "",
             "required": true  
-      }
-    },
+      },
+    }
     "buildpacks": [
         {
             "url": "heroku/python"
