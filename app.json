@@ -5,11 +5,12 @@
    "logo": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
    "keywords": [
         "python",
-        "telegram"
-  "repository": "https://github.com/MrRizoel/BanallBot",
-  "website": "https://github.com/MrRizoel",
-  "success_url": "https://t.me/TheRiZoeL",
-  "env": {
+        "telegram",
+         ],
+   "repository": "https://github.com/MrRizoel/BanallBot",
+   "website": "https://github.com/MrRizoel",
+   "success_url": "https://t.me/TheRiZoeL",
+   "env": {
       "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
@@ -29,11 +30,11 @@
             "description": "Sudo users id space by space",
             "value": "",
             "required": true  
-      },
-    }
+      }
+    },
     "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ],
- }
+    ]
+}
