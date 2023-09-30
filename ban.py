@@ -1,7 +1,3 @@
-#  Copyright (c) 2022 @TheRiZoeL - RiZoeL
-# Telegram Ban All Bot 
-# Creator - RiZoeL
-
 import logging
 import re
 import os
@@ -59,11 +55,11 @@ for x in Var.SUDO:
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        text = "Pong!"
+        text = "⚡🇩𝜩Ⓐ︎🇩 ⚡"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"**I'm On** \n\n __Pong__ !! `{ms}` ms")
+        await event.edit(f"**ɪ'ᴍ ᴏɴ 💘 ** \n\n __🇩𝜩Ⓐ︎🇩__ !! `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/kickall"))
@@ -80,7 +76,7 @@ async def kickall(event):
          creator = RiZ.creator
          if not admin and not creator:
               return await event.reply("I Don't have sufficient Rights !!")
-         RiZoeL = await Riz.send_message(event.chat_id, "**Hello !! I'm Alive**")
+         RiZoeL = await Riz.send_message(event.chat_id, "**ʜᴇʟʟᴏ 🌹!!! ᴅᴇᴀᴅ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ 💖💓**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -112,7 +108,7 @@ async def banall(event):
          creator = RiZ.creator
          if not admin and not creator:
               return await event.reply("I Don't have sufficient Rights !!")
-         RiZoeL = await Riz.send_message(event.chat_id, "**Hello !! I'm Alive**")
+         RiZoeL = await Riz.send_message(event.chat_id, "**ʜᴇʟʟᴏ 🌹!!! ᴅᴇᴀᴅ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ 💖💓**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -181,7 +177,7 @@ async def _(e):
 @Riz.on(events.NewMessage(pattern="^/restart"))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "__Restarting__ !!!"
+        text = "__ʀᴇsᴛᴀʀᴛɪɴɢ ᴅᴇᴀᴅ ʙᴀɴ ᴀʟʟ ʙᴏᴛ 💖__ !!!"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await Riz.disconnect()
@@ -192,6 +188,6 @@ async def restart(e):
 
 
 print("\n\n")
-print("Your Ban All Bot Deployed Successfully ✅")
+print("ʏᴏᴜʀ ᴅᴇᴀᴅ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴅᴇᴘʟᴏʏᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✅")
 
 Riz.run_until_disconnected()
